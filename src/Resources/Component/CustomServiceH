@@ -1,0 +1,26 @@
+//
+//  #NAME#Service.h
+//
+//  Created by Sergio Cirasa on 10/07/12.
+//  Copyright (c) 2012 Creative Coefficient. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+#import "Service.h"
+
+@class #NAME#Service;
+
+@protocol #NAME#ServiceDelegate
+- (void)#NAME#ServiceFinished:(#NAME#Service*)service;
+- (void)#NAME#ServiceFinished:(#NAME#Service*)service gotError:(NSError*)error;
+@end
+
+@interface #NAME#Service : Service {
+    id<#NAME#ServiceDelegate> delegate;
+}
+
+@property(nonatomic,assign) id<#NAME#ServiceDelegate> delegate;    
+    
+- (id)init#PARAMS#;
+
+@end

@@ -1,0 +1,17 @@
+//
+//  Example.h
+//
+//  Created by Sergio Cirasa on 10/07/12.
+//  Copyright (c) 2012 x. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+#import "#NAME#Service.h"
+
+@interface Example : NSObject<#NAME#ServiceDelegate>
+{
+    #NAME#Service *service;
+
+}
+
+@end

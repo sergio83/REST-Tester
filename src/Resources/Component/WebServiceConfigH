@@ -1,0 +1,10 @@
+//
+//  WebServiceConfig.h
+//
+//  Created by Sergio Cirasa on 29/06/12.
+//  Copyright (c) 2012 Creative Coefficient. All rights reserved.
+//
+
+
+#define kServicePath @"#URLBASE#/"
+#define k#NAME#Path @"#URLSERVICE#"

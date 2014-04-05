@@ -1,0 +1,46 @@
+//
+//  #NAME#Service.m
+//
+//  Created by Sergio Cirasa on 10/07/12.
+//  Copyright (c) 2012 x. All rights reserved.
+//
+
+#import "#NAME#Service.h"
+
+@implementation #NAME#Service
+@synthesize delegate;
+
+- (id)init#PARAMS#{
+    self = [super initWithRequestMethod:@"#METHOD#" url:[NSString stringWithFormat:@"%@%@#KEYS#",kServicePath,k#NAME#Path#VALUES#]];
+    if (self) {		
+#POSTVALUES#
+#HEADERSVALUES#
+    }
+    
+    return self;
+}
+#pragma mark -  ASIHTTPRequestDelegate
+//-------------------------------------------------------------------------------------------------------------
+- (void)requestFinished:(ASIHTTPRequest *)_request{
+
+	responseStatusCode = [_request responseStatusCode];
+
+    if(responseStatusCode!=200){
+        [delegate #NAME#ServiceFinished:self gotError:[_request error]];	
+    }else{ 
+       [delegate #NAME#ServiceFinished:self];
+    }  
+
+    return;
+}
+//-------------------------------------------------------------------------------------------------------------
+- (void)requestFailed:(ASIHTTPRequest *)_request{
+	NSLog(@"%@ error:%@",[self description],[[_request error] description]);
+	[delegate #NAME#ServiceFinished:self gotError:[_request error]];	
+}
+//-------------------------------------------------------------------------------------------------------------
+- (void)dealloc {
+	[super dealloc];
+}
+//-------------------------------------------------------------------------------------------------------------
+@end

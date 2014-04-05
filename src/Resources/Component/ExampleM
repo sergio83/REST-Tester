@@ -1,0 +1,42 @@
+//
+//  Example.m
+//
+//  Created by Sergio Cirasa on 10/07/12.
+//  Copyright (c) 2012 Creative Coefficient. All rights reserved.
+//
+
+#import "Example.h"
+
+@implementation Example
+//-------------------------------------------------------------------------------------------------------------------
+- (id)init
+{
+    self = [super init];
+    if(self){
+        service = [[#NAME#Service  alloc] init#PARAMS#];
+        service.delegate=self;
+        service.username = @"#USER#";
+        service.password = @"#PASSWORD#";
+        [service start];
+    }
+    return self;
+}
+//-------------------------------------------------------------------------------------------------------------------
+#pragma mark - #NAME#ServiceDelegate
+- (void)#NAME#ServiceFinished:(#NAME#Service*)_service
+{
+    NSLog(@"%@",service.response);
+}
+//-------------------------------------------------------------------------------------------------------------------
+- (void)#NAME#ServiceFinished:(#NAME#Service*)_service gotError:(NSError*)error
+{
+    NSLog(@"%@",service.response);
+}
+//-------------------------------------------------------------------------------------------------------------------
+-(void) dealloc
+{
+    [service release];
+    [super dealloc];
+}
+//-------------------------------------------------------------------------------------------------------------------
+@end
