@@ -12,4 +12,16 @@ This is a tool that can be very helpful when testing REST services. It allows to
 - Collapsible JSON Formatter - view the json code in colors.
 - Convert the JSON to Object-C model.
 - Get a simple iPhone app that consume the service.
-- 
+
+
+Requirements
+==============
+- OS X SDK 10.9
+
+Licence
+==============
+This code is licensed under the MIT license: http://www.opensource.org/licenses/mit-license.php
+
+
+
+
