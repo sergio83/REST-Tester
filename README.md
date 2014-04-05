@@ -30,8 +30,9 @@ This is a tool that can be very helpful when testing REST services. It allows to
 <br>
 
 <br>
-<a href='http://s17.postimg.org/4mueha2tn/image.jpg' target='_blank'><img src='http://s17.postimg.org/4mueha2tn/image.jpg' border='0' alt="" /></a>
+<a href='http://s17.postimg.org/lalwjrxlb/image.png' target='_blank'><img src='http://s17.postimg.org/lalwjrxlb/image.png' border='0' alt="" /></a>
 <br>
+
 
 Requirements
 ==============
