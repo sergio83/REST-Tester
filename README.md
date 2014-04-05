@@ -33,7 +33,6 @@ This is a tool that can be very helpful when testing REST services. It allows to
 <a href='http://s17.postimg.org/4mueha2tn/image.jpg' target='_blank'><img src='http://s17.postimg.org/4mueha2tn/image.jpg' border='0' alt="" /></a>
 <br>
 
-
 Requirements
 ==============
 - OS X SDK 10.9
